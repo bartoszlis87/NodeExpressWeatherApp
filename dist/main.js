@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "151608df5b7b79908b56";
+/******/ 	var hotCurrentHash = "96490cc2bb757b7e2c6f";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -3088,13 +3088,9 @@ __webpack_require__.r(__webpack_exports__);
 
  // Log message to console
 
-Object(_js_logger__WEBPACK_IMPORTED_MODULE_0__["default"])('A very warm welcome to Expack!'); // Needed for Hot Module Replacement
-
-if (typeof module.hot !== 'undefined') {
+Object(_js_logger__WEBPACK_IMPORTED_MODULE_0__["default"])('Its finished!!');
+if (true) // eslint-disable-line no-undef
   module.hot.accept(); // eslint-disable-line no-undef
-}
-
-ge('Welcome to Expack!');
 
 /***/ }),
 
