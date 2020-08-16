@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to nodeexpressweatherapp 👋</h1>
+<h1 align="center">Welcome to nodeExpressWeatherApp 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/bartoszlis87/NodeExpressWeatherApp/blob/master/README.md" target="_blank">
@@ -17,15 +17,23 @@ npm install
 ```
 
 ## Usage
-
+```sh
+npm run buildDev
+```
 ```sh
 npm run start
 ```
-
+```sh
+http://localhost:8080
+```
 ## Run tests
 
 ```sh
-npm run test
+npm test
+```
+## Coverage Report
+```sh
+npm run coverage 
 ```
 
 ## Author
