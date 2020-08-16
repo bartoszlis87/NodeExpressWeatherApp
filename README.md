@@ -24,17 +24,21 @@ mini-css-extract-plugin — minifies CSS
 ```
 
 ## Install
-
 ```sh
 npm install
 ```
 
-## Usage
+## Create a Development build
 ```sh
 npm run buildDev
 ```
+## Create a Production build
 ```sh
-npm run start
+npm run buildProd
+```
+## Start local server 
+```sh
+npm start
 ```
 ```sh
 http://localhost:8080
