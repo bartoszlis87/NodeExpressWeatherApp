@@ -20,8 +20,6 @@ module.exports = {
                 loader: "babel-loader",
             },
             {
-                // Loads the javacript into html template provided.
-                // Entry point is set below in HtmlWebPackPlugin in Plugins
                 test: /\.html$/,
                 use: [
                     {

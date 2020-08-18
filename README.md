@@ -1,66 +1,34 @@
-<h1 align="center">Welcome to nodeExpressWeatherApp 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/bartoszlis87/NodeExpressWeatherApp/blob/master/README.md" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-</p>
+# Expack - Express and Webpack Boilerplate
 
-### 🏠 [Homepage](https://bartoszlis87.github.io/NodeExpressWeatherApp/)
+Expack is the bare-bones Express and Webpack boilerplate with ES6+ babel transpilation, ESLint linting, Hot Module Reloading, and Jest test framework enabled.
 
-### ✨ [Demo](https://bartoszlis87.github.io/NodeExpressWeatherApp/)
+Expack has two build modes: Development and Production.
 
-## Tech Stack
+When you run `npm run buildDev`, Javascript, HTML, and CSS files are unminified and not uglified, meaning that you can easily inspect them in Chrome Dev Tools. Hot Module Reloading is enabled via `webpack-dev-middleware` and `webpack-hot-middleware`. 
 
-```Express — server
-Webpack 4 — bundling
-Jest — testing
-Babel — ES6+ transpilation
-ESlint — Linting
-Webpack Dev Middleware — Bundle code in memory instead of in a file
-Webpack Hot Middleware — Enables Hot Module Reloading (HMR)
-UglifyJS — uglifies code
-mini-css-extract-plugin — minifies CSS
-```
+When you run `npm run buildProd`, Javascript, HTML, and CSS files are all minified and uglified, and images are encoded as Base64 directly into your CSS file, which results in less calls to the server for image files.
 
-## Install
-```sh
-npm install
-```
+## Google App Engine Flex Deployment
 
-## Create a Development build
-```sh
-npm run buildDev
-```
-## Create a Production build
-```sh
-npm run buildProd
-```
-## Start local server 
-```sh
-npm start
-```
-```sh
-http://localhost:8080
-```
-## Run tests
+Expack can be deployed directly to Google App Engine Flex with the command `npm run deploy`. **IMPORTANT:** Currently `app.yaml` is configured to use minimal resources to save on cost, which is great for development but terrible for production. Please review and update `app.yaml` to suit your own needs.
 
-```sh
-npm test
-```
-## Coverage Report
-```sh
-npm run coverage 
-```
+## Installation & Usage
 
-## Author
+    git clone https://github.com/bengrunfeld/expack.git
+    cd expack
+    npm install
+    
+    npm run buildDev        // for development
+        // OR
+    npm run buildProd
+    
+    npm start               // navigate to localhost:8080 for local dev
 
-👤 **Bartosz Lis**
+### For testing
 
-* Website: Bartosz Lis
-* Github: [@bartoszlis87](https://github.com/bartoszlis87)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/bartosz-lis\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/bartosz-lis\/)
+    npm test                // runs test
+    npm run coverage        // generates a coverage report
 
-## Show your support
+## Security
 
-Give a ⭐️ if this project helped you!
+Please ensure that your version of Node and NPM are up to date, and run `npm audit` after installation to ensure that no vulnerabilities exist. If they do, follow the audits instructions on how to resolve them. 
